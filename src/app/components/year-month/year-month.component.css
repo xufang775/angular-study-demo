@@ -1,0 +1,31 @@
+.list-menu{ display: inline-block; width: 300px;height: 200px; position: absolute;z-index: 99;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;}
+.list-menu>div{float: left; background: #f2f2f2;}
+.list-menu>div.sub-list1{
+  width: 195px;border-right:1px solid #a2a2a2;
+  -webkit-border-radius: 5px 0 0 5px;
+  -moz-border-radius: 5px 0 0 5px;
+  border-radius: 5px 0 0 5px;
+}
+.list-menu>div.sub-list2{width: 80px;
+  -webkit-border-radius: 0 5px 5px 0;
+  -moz-border-radius: 0 5px 5px 0;
+  border-radius: 0 5px 5px 0;
+}
+.list-menu ul{ padding: 1px;margin: 0; }
+.list-menu ul>li{list-style: none; padding: 5px 10px;display: inline-block;}
+li.active{ background: #37C2DD; border-radius: 12px; }
+div.title{ line-height: 40px;text-align: center; border-bottom: 1px solid #a2a2a2; font-weight: bold;}
+.month-wrap,.year-wrap{ max-height: 187px; overflow-y: auto; }
+
+.free-iscroll{ overflow-y: auto; }
+/*有关滚动条样式的设置*/
+.free-iscroll::-webkit-scrollbar {height: 6px;width: 6px; }
+.free-iscroll::-webkit-scrollbar-thumb {background-color: #a4a4a8;outline: 1px solid #333; }
+.free-iscroll::-webkit-scrollbar-corner, .free-iscroll::-webkit-scrollbar-track {background-color: #ccc; }
+
+.free-iscroll.free-iscroll-hover {overflow: hidden !important; }
+.free-iscroll.free-iscroll-hover:hover, .free-iscroll.free-iscroll-hover:active, .free-iscroll.free-iscroll-hover:focus {overflow-y: auto !important; }
+
