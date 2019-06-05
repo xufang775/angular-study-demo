@@ -50,14 +50,17 @@ export class InputFocusComponent implements OnInit,AfterViewInit {
   ngAfterViewInit() {
     console.log(`AfterViewInit`);
     // this.renderer
-    this.log();
+    // this.log();
   }
 
   // Beware! Called frequently!
   // Called in every change detection cycle anywhere on the page
   ngAfterViewChecked() {
     console.log(`AfterViewChecked`);
-    this.log();
+    // this.log();
+    if(this.infocus.last){
+      // this.infocus.last.nativeElement.focus();
+    }
   }
 
   ngOnDestroy() { console.log(`OnDestroy`); }
